@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MRZ Generator</title>
+</head>
+<body>
+    <form action="/display_mrz" method="post">
+        <label for="passport_type">Passport Type:</label>
+        <input type="text" id="passport_type" name="passport_type" maxlength="1" required><br><br>
+
+        <label for="issuing_country">Issuing Country:</label>
+        <input type="text" id="issuing_country" name="issuing_country" maxlength="3" required><br><br>
+
+        <label for="surname">Surname:</label>
+        <input type="text" id="surname" name="surname" required><br><br>
+
+        <label for="given_names">Given Names:</label>
+        <input type="text" id="given_names" name="given_names" required><br><br>
+
+        <label for="passport_number">Passport Number:</label>
+        <input type="text" id="passport_number" name="passport_number" maxlength="9" required><br><br>
+
+        <label for="nationality">Nationality:</label>
+        <input type="text" id="nationality" name="nationality" maxlength="3" required><br><br>
+
+        <label for="dob">Date of Birth (YYMMDD):</label>
+        <input type="text" id="dob" name="dob" maxlength="6" required><br><br>
+
+        <label for="sex">Sex (M/F/<):</label>
+        <input type="text" id="sex" name="sex" maxlength="1" required><br><br>
+
+        <label for="expiry_date">Expiration Date (YYMMDD):</label>
+        <input type="text" id="expiry_date" name="expiry_date" maxlength="6" required><br><br>
+
+        <label for="personal_number">Personal Number:</label>
+        <input type="text" id="personal_number" name="personal_number" maxlength="14"><br><br>
+
+        <input type="submit" value="Generate MRZ">
+    </form>
+</body>
+</html>
