@@ -18,18 +18,11 @@ def handler(request):
             mrz = create_mrz(fields)
             logger.info("Generated MRZ: %s", mrz)
             
-            # Print all fields and MRZ to the console
-            print("Received Fields:")
-            for key, value in fields.items():
-                print(f"{key}: {value}")
-            
-            print("\nGenerated MRZ:")
-            print(mrz)
-            
             return {
                 "statusCode": 200,
                 "body": json.dumps({
-                    "message": "MRZ and fields printed to console. Check your server logs."
+                    "message": "MRZ and fields printed to console. Check your server logs.",
+                    "mrz": mrz
                 })
             }
 
