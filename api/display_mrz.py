@@ -1,7 +1,7 @@
 import json
 import logging
-from calculate_check_digit import calculate_check_digit
-from create_mrz import create_mrz
+from .calculate_check_digit import calculate_check_digit
+from .create_mrz import create_mrz
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
